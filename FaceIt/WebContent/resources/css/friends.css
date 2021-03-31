@@ -1,0 +1,249 @@
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	overflow: scroll;
+}
+/*---------------------------------------------------------------------- page ---------------------------------------------------------------------------------------*/
+.col {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+}
+
+.col-1 {
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.col-2 {
+	width: 50%;
+	background-color: #ffffff;
+	padding-top: 8%;
+	padding-bottom: 10%;
+}
+/*---------------------------------------------------------------------------------------- show messages  ---------------------------------------------------------------------------*/
+#mymessages{
+	margin-left:15%;
+}
+.w3-row{
+	margin-left:4%;	
+}
+.row-main {
+	display: flex;
+	flex-direction: row;
+	margin-top:2%;	
+	margin-bottom:2%;	
+	width: 80%;
+	border-radius: 8px;
+}
+
+.card {
+	background-color: #ffffff;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.user-col {
+	width: 20%;
+	padding: 1%;
+	width: 4vw;
+	height: 4vw;
+	overflow: hidden;
+}
+
+.user-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.user-name {
+	width: 100%;
+}
+
+.message-col {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+.message-top {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	padding-left: 2%;
+	padding-right: 1%;
+}
+
+.user-message {
+	width: 100%;
+}
+
+.message-bottom {
+	width: 10%;
+	padding: 1%;
+	padding-top: 4%;
+	width: 2vw;
+	height: 2vw;
+	overflow: hidden;
+}
+
+.user-time {
+	width: 100%;
+}
+#visitLink{
+	text-decoration: none;
+	color:#000000;
+}
+#username {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#date {
+	font-size: 0.8vw;
+	color:grey;
+}
+
+#message {
+	padding-top: 0.5%;
+	padding-bottom: 10%;
+	font-size: 1vw;
+}
+
+#deleteimg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*------------------------------------------------------------------------------------------- messages ------------------------------------------------------------------------------*/
+.sendMessage {
+	margin-top: 4%;
+	margin-left: 17%;
+}
+#dropdownDesign {
+	width: 75%;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-bottom: 2%;
+}
+#textDesign{
+	width: 75%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+	margin-bottom: 2%;
+}
+#dropdownitemsDesign {
+	width: 75%;
+    font-size: 1.2em;
+}
+#submitDesign{
+	color: #ffffff;
+    border-radius: 5px;
+    margin-left: 25%;
+    font-size: 1em;
+    height: 2em;
+    background-color: #0076ed;
+    border: #0076ed;
+}
+#heading{
+	margin-top: 6%;
+    margin-left: 45%;
+}
+#mutualfriends{
+	margin: 0;
+	padding: 0;
+}
+.friendsList{
+	text-decoration: none;
+	font-weight:bold;	
+	color: black;
+	display: none;
+}
+.friendsList.clicked{
+	text-decoration: none;
+	font-weight:bold;	
+	color: black;
+	display: block;
+}
+.showmoreFriends{
+	display: inline;
+}
+.showmoreFriends.clicked{
+	display: none;
+}
+/*---------------------------------------------------------------------------------------- pagination ---------------------------------------------------------------------------*/
+.pagination {
+	margin-left:20%;
+	margin-top:4%;
+}
+.pages{
+	text-decoration: none;
+	font-size: 1.2em;
+	padding:1%;
+	padding-left:2%;
+	padding-right:2%;
+	color: #000000;
+}
+.active {
+  background-color: #03c4a1;
+  color: white;
+  border-radius: 5px;
+}
+
+.inactive:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+/*------------------------------------------------------------------------------------------ media  -----------------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+	.col {
+		width: 100%;
+	}
+	.col-1 {
+		width: 0%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+			#username {
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+	#date {
+	font-size: 0.8em;
+	color:grey;
+	}
+
+	#message {
+	font-size: 1em;
+	}
+	.message-bottom {
+	width: 10%;
+	padding: 1%;
+	padding-top: 4%;
+	width: 5vw;
+	height: 5vw;
+	overflow: hidden;
+	}
+	.user-col {
+	width: 20%;
+	padding: 1%;
+	width: 8vw;
+	height: 8vw;
+	overflow: hidden;
+	}
+}

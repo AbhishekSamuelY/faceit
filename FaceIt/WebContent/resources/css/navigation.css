@@ -1,0 +1,115 @@
+/*------------------------------------------------------------------------------ header ---------------------------------------------------------------------------------------------*/
+.navigator {
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	width: 100%;
+	background-color: #120078;
+}
+
+#logo_nav {
+	margin: 0;
+	padding: 0;
+	margin-left: 5%;
+	float: left;
+	color: #ffffff;
+}
+
+#logo_nav h1 {
+	color: #ffffff;
+}
+
+.signout {
+	margin: 0;
+	padding: 0;
+	margin-right: 5%;
+	float: right;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1.5em;
+}
+
+.regular {
+	padding-right: 10%;
+}
+
+.nav {
+	padding-left: 35%;
+}
+
+.icon {
+	display: none;
+}
+/*------------------------------------------------------------------------------------------ media  -----------------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+	/*body css*/
+	body {
+		background-color: #f1f1f1;
+		margin: 0;
+		padding: 0;
+		overflow: scroll;
+	}
+	/*display nav*/
+	.navigator {
+		padding-top: 0.5%;
+		padding-bottom: 8%;
+		width: 100%;
+		background-color: #120078;
+	}
+	.navigator-responsive {
+		padding-top: 0.5%;
+		width: 100%;
+		background-color: #120078;
+	}
+	.nav-responsive {
+		background-color: #120078;
+	}
+	.navigator.responsive {
+		padding-top: 0.5%;
+		width: 100%;
+		background-color: #120078;
+	}
+	/*display burger icon*/
+	.navigator a.icon {
+		padding-right: 4%;
+		padding-top: 1.5%;
+		float: right;
+		display: block;
+		color: #ffffff;
+		transform: scale(1.5);
+	}
+	.navigator-responsive a.icon {
+		padding-right: 4%;
+		padding-top: 1.5%;
+		float: right;
+		display: block;
+		color: #ffffff;
+		transform: scale(1.5);
+	}
+	.header.responsive {
+		padding-bottom: 8%;
+	}
+	/*hide hyperlinks*/
+	.regular {
+		display: none;
+	}
+	.signout {
+		display: none;
+	}
+	.responsive-max {
+		display: none;
+	}
+	.responsive-min {
+		display: block;
+		float: none;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 1.5em;
+	}
+	.responsive-min:hover {
+		background-color: #03c4a1;
+		color: #000000;
+	}
+}

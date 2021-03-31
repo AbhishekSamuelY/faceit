@@ -1,0 +1,286 @@
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: scroll;
+}
+/*-------------------------------------------------------------------------------- page ----------------------------------------------------------------------------------------------*/
+.col {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto !important;
+	min-height: 100%;
+}
+
+.col-1 {
+	height: auto;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-top: 10%;
+}
+
+.col-2 {
+	height: auto;
+	width: 50%;
+	background-color: #ffffff;
+	padding-top: 8%;
+}
+/*---------------------------------------------------------------------------- main page ---------------------------------------------------------------------------------------------*/
+.main-page {
+	display: flex;
+	flex-direction: row;
+	margin-left: 5%;
+	width: 100%;
+}
+
+.profilepicstatus {
+	width: 25%;
+}
+
+.status {
+	width: 100%;
+	padding-left: 10%;
+}
+
+.enterstatus {
+	padding-left: 20%;
+}
+
+.others {
+	padding-left: 10%;
+	width: 75%;
+}
+
+.heading {
+	width: 100%;
+	display: block;
+}
+
+.accountinfocontents {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	display: flex;
+}
+
+.personalinfocontents {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.profilepic {
+	position: relative;
+	padding: 1%;
+	width: 14vw;
+	height: 14vw;
+	width: 14vw;
+}
+
+.pic {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profilepicform {
+	position: absolute;
+	padding: 1%;
+	padding-top: 10%;
+	padding-left: 12%;
+	width: 2vw;
+	height: 2vw;
+	z-index: 2;
+	padding-left: 12%;
+}
+
+#picform {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.mainheader {
+	font-size: 1.8em;
+	display: inline;
+}
+
+.subheader {
+	font-size: 1.2em;
+}
+
+td {
+	padding: 0;
+}
+
+.table {
+	width: 100%;
+	font-size: 1.3em;
+}
+
+tr.row td {
+	width: 10%;
+	padding-bottom: 4%;
+}
+
+.nostatus.hidden {
+	display: none;
+}
+
+.changeStatus {
+	display: none;
+}
+
+.changeStatus.visible {
+	display: block;
+}
+
+.statuspresent {
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+.statuspresent.hidden {
+	display: none;
+}
+
+#buttonDesign {
+	background-color: #0076ed;
+	border: 1px solid #0076ed;
+	color: #ffffff;
+	border-radius: 5px;
+	margin-bottom: 5%;
+	font-size: 1.2em;
+	height: 2em;
+}
+
+#textDesign {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+	margin-bottom: 5%;
+}
+/*------------------------------------------------------------------------------------------ media  -----------------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+	.col {
+		width: 100%;
+	}
+	.col-1 {
+		width: 0%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.main-page {
+		display: flex;
+		flex-direction: column;
+		margin-left: 5%;
+		width: 100%;
+	}
+	.profilepicstatus {
+		width: 50%;
+		padding-bottom: 8%;
+	}
+	.status {
+		width: 100%;
+		padding-left: 50%;
+	}
+	.enterstatus {
+		padding-left: 20%;
+	}
+	.others {
+		padding-left: 20%;
+		width: 75%;
+	}
+	.heading {
+		width: 100%;
+		display: block;
+	}
+	.accountinfocontents {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		display: flex;
+	}
+	.personalinfocontents {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.profilepic {
+		position: relative;
+		padding: 1%;
+		padding-left: 40%;
+		height: 50vw;
+		width: 50vw;
+		height: 50vw;
+	}
+	.pic {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.profilepicform {
+		position: absolute;
+		padding: 1%;
+		padding-top: 40%;
+		padding-left: 65%;
+		width: 5vw;
+		height: 5vw;
+		z-index: 2;
+	}
+	.table {
+		width: 100%;
+		font-size: 1.3em;
+	}
+	tr.row td {
+		width: 10%;
+		padding-bottom: 4%;
+	}
+	.nostatus.hidden {
+		display: none;
+	}
+	.changeStatus {
+		display: none;
+	}
+	.changeStatus.visible {
+		display: block;
+	}
+	.statuspresent {
+		text-decoration: none;
+		color: #000000;
+		font-size: 1.2em;
+		cursor: pointer;
+	}
+	.statuspresent.hidden {
+		display: none;
+	}
+	#buttonDesign {
+		background-color: #0076ed;
+		border: 1px solid #0076ed;
+		color: #ffffff;
+		border-radius: 5px;
+		margin-bottom: 5%;
+		margin-left: 35%;
+		font-size: 1.2em;
+		height: 2em;
+	}
+	#textDesign {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		resize: vertical;
+		margin-bottom: 5%;
+	}
+}

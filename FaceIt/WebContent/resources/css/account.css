@@ -1,0 +1,118 @@
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: scroll;
+}
+/*-------------------------------------------------------------------------------- page ----------------------------------------------------------------------------------------------*/
+.col {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto !important;
+	min-height: 100%;
+}
+
+.col-1 {
+	height: auto;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-top: 10%;
+}
+
+.col-2 {
+	height: auto;
+	width: 50%;
+	background-color: #ffffff;
+	padding-top: 5%;
+}
+/*---------------------------------------------------------------------------- main page ---------------------------------------------------------------------------------------------*/
+.main-page {
+	display: flex;
+	flex-direction: row;
+	margin-left: 5%;
+	width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.mainheader{
+	padding-left:25%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #0076ed;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #0076ed;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 15%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*------------------------------------------------------------------------------------------ media  -----------------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+	.col {
+		width: 100%;
+	}
+	.col-1 {
+		width: 0%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.main-page {
+		display: flex;
+		flex-direction: column;
+		margin-left: 5%;
+		width: 100%;
+	}
+}
