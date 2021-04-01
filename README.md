@@ -1,4 +1,4 @@
-# faceit
+# Just Chat
 initial version of facebook, developed using java, spring mvc, hibernate, h2 database
 
 ## Welcome Page
